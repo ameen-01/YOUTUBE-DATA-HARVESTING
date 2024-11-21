@@ -15,7 +15,7 @@ from streamlit_option_menu import option_menu
 #establishing connection with youtube Api
 api_service_name = "youtube"
 api_version = "v3"
-api_Key="AIzaSyAHm_8PPT8nQSmcieO-CiF4OLuNSgvVYXU"
+api_Key="(your google API key)"
 youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_Key)
 
 #Establishing Connection With MySql Database
@@ -24,7 +24,7 @@ from mysql import connector
 connection = connector.connect(
     host='localhost',
     user='root',
-    password='mysql@716'
+    password='(your sql password)'
 )
 cursor=connection.cursor()
 
